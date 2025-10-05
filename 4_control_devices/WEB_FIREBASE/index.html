@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Smart Home Devices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="header">
+        <h1> IoT Lab </h1> 
+    </div>
+    <div class="container">
+
+        <div class="card">
+            <div class="iconFrame">
+                <i class="fas fa-thermometer-half"></i>
+            </div>
+            <div>
+                <p>Temperature: <span id="temp" style="color: rgb(167, 38, 174);">20</span></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="iconFrame">
+                <i class="fas fa-tint"></i>
+            </div>
+            <div>
+                <p>Humidity: <span id="humidity" style="color: rgb(31, 199, 16);">60</span></p>
+            </div>
+        </div>
+        
+        <div class="card" id="light1">
+            <div class="iconFrame">
+                <i class="fas fa-lightbulb icon"></i>
+            </div>
+            <div class="info">
+                <div class="title" style="text-align: center;">Den 1</div>
+            </div>
+            <div class="button-group">
+                <button class="toggle-btn on" onclick="turnOn('light1')">ON</button>
+                <button class="toggle-btn off" onclick="turnOff('light1')">OFF</button>
+            </div>
+        </div>
+        
+        <div class="card" id="light2">
+            <div class="iconFrame">
+                <i class="fas fa-lightbulb icon"></i>
+            </div>
+            <div class="info">
+                <div class="title" style="text-align: center;">Den 2</div>
+            </div>
+            <div class="button-group">
+                <button class="toggle-btn on" onclick="turnOn('light2')">ON</button>
+                <button class="toggle-btn off" onclick="turnOff('light2')">OFF</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="iconFrame">
+            <i class="fas fa-lightbulb icon"></i>
+            </div>
+            <div class="info">
+                <div class="title">Spotlight 3</div>
+                <div class="description">Phillips Hue</div>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" id="toggle3">
+                <label for="toggle3"></label>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="iconFrame">
+            <i class="fas fa-lightbulb icon"></i>
+            </div>
+            <div class="info">
+                <div class="title">Spotlight 4</div>
+                <div class="description">Panasonic</div>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" id="toggle4">
+                <label for="toggle4"></label>
+            </div>
+        </div>
+       
+
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="./control.js"> </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.card-orange {
+    margin-left: 5px;
+    font-size: 14px;
+}
+.card-orange .circle-container {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 8px;
+    right: 8px;
+}
+
+.card-orange .circle-wind {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.card-orange .wind-bg {
+    fill: none;
+    stroke: hsla(32, 56%, 78%, 0.793);
+    stroke-width: 10;
+}
+
+.card-orange .wind-progress {
+    fill: none;
+    stroke: white; 
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 314; 
+    stroke-dashoffset: 314; 
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.card-orange .wind-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

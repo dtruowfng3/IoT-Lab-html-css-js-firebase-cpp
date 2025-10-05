@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedroom Devices</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/rooms/bedroom.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <a href="../index.html" class="back-button">← Back</a>
+        <h1>Bedroom Devices</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="iconFrame">
+                <i class="fas fa-snowflake icon"></i>
+            </div>
+            <div class="info">
+                <div class="title">Air Conditioner</div>
+                <div class="description">Samsung AR35 A++</div>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" id="toggle3">
+                <label for="toggle3"></label>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="iconFrame">
+            <i class="fas fa-bell icon"></i>
+            </div>
+            <div class="info">
+                <div class="title">Alarm</div>
+                <div class="description">Frontpoint Home Alarm</div>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" id="toggle6">
+                <label for="toggle6"></label>
+            </div>
+        </div>
+
+        <div class="card" id="light2">
+            <div class="iconFrame">
+                <i class="fas fa-lightbulb icon"></i>
+            </div>
+            <div class="info">
+                <div class="title" style="text-align: center;">Den 2</div>
+            </div>
+            <div class="button-group">
+                <button class="toggle-btn on" onclick="turnOn('light1')">ON</button>
+                <button class="toggle-btn off" onclick="turnOff('light1')">OFF</button>
+            </div>
+        </div>
+        <div class="card" id="light1">
+            <div class="iconFrame">
+                <i class="fas fa-lightbulb icon"></i>
+            </div>
+            <div class="info">
+                <div class="title" style="text-align: center;">Den 1</div>
+            </div>
+            <div class="button-group">
+                <button class="toggle-btn on" onclick="turnOn('light1')">ON</button>
+                <button class="toggle-btn off" onclick="turnOff('light1')">OFF</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

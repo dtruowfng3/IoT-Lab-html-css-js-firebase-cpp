@@ -1,0 +1,75 @@
+.image-card {
+    position: relative;
+    height: 250px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.circle-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.image-circle {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.circle-bg {
+    fill: none;
+    stroke: hsla(180, 35%, 50%, 0.39); /* Màu nền nhạt */
+    stroke-width: 1.5;
+}
+
+.circle-progress {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 314; /* Chu vi hình tròn */
+    stroke-dashoffset: 314; /* Ban đầu ẩn */
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.image-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+}
+
+.image-card p {
+    position: absolute;
+    color: azure;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.image-card .fa-wind {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: white;
+}

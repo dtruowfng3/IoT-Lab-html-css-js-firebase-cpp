@@ -1,0 +1,47 @@
+.card-white {
+    margin-right: 5px;
+}
+.card-white .circle-container {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 8px;
+    right: 8px;
+}
+.card-white .temp-circle {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+.card-white .circle-bg {
+    fill: none;
+    stroke: hsla(82, 89%, 40%, 0.2);
+    stroke-width: 10;
+}
+.card-white .circle-progress {
+    fill: none;
+    stroke: #6EC207;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 314; /* Chu vi hình tròn */
+    stroke-dashoffset: 314; /* Ban đầu ẩn */
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+.card-white .temp-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-white .time {
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: #6EC207;
+    padding: 5px 10px;
+    border-radius: 15px;
+}

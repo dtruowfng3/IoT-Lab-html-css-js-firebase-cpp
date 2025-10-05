@@ -1,0 +1,51 @@
+.card-green {
+    margin-left: 5px;
+}
+.card-green .circle-container {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 8px;
+    right: 8px;
+}
+
+.card-green .humd-circle {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.card-green .humd-bg { /* Đổi .circle-bg -> .humd-bg */
+    fill: none;
+    stroke: hsla(160, 80%, 40%, 0.2); /* Xanh lá nhạt */
+    stroke-width: 10;
+}
+
+.card-green .humd-progress { /* Đổi .circle-progress -> .humd-progress */
+    fill: none;
+    stroke: #F09319; 
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.card-green .humd-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-green .time {
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: #F09319;
+    padding: 5px 10px;
+    border-radius: 15px;
+}

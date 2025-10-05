@@ -1,0 +1,12 @@
+{
+  "LEDControl": {
+    "LED1": 1,
+    "LED2": 0,
+    "LED3": 1,
+    "LED4": 0
+  },
+  "SensorData": {
+    "Humidity": "60.00 %",
+    "Temperature": "32.10 °C"
+  }
+}

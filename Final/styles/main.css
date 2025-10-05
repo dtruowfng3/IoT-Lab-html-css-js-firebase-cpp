@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(to bottom right, #9de7b7, white);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.header i {
+    font-size: 24px;
+}
+.main-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.card {
+    flex: 1;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    /* text-align: center; */
+    position: relative;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.item1{
+    display: flex;
+    
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 36px;
+}
+.card p {
+    margin: 5px 0;
+}
+
+.image-card {
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+.image-card img {
+    width: 100%;
+    border-radius: 20px;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.small-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.small-cards .card {
+    width: 48%;
+    min-width: 150px;
+}
+
+.card-white {
+    background: white;
+    color: black;
+}
+.card-green {
+    background: #185519;
+}
+.card-dark {
+    background: #212121;
+}
+.card-orange {
+    background: #ff9800;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        max-width: none;
+    }
+    .small-cards .card {
+        width: 100%;
+    }
+    .footer {
+        position: relative;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    color: white;
+    background: #185519; /* Màu xanh lá */
+    border-radius: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    max-width: 400px; /* Đặt theo kích thước của .container */
+    width: 100%;
+}
+
+.footer-item {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+    padding: 12px;
+    flex: 1; /* Chia đều khoảng cách */
+    text-align: center;
+}
+
+.footer-item:hover {
+    color: #00ff99;
+    transform: scale(1.2);
+}
+
+.footer-item.active {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 10px 0;
+    }
+    .footer-item {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
