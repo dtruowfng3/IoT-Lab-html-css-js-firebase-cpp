@@ -1,0 +1,22 @@
+# Ignore all JS files
+**/*.js
+
+# Ignore all CPP files
+**/*.cpp
+
+# Node modules (nếu có)
+node_modules/
+
+# Build output (nếu dùng build tools)
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE folders
+.vscode/
+
+# Firebase admin secrets (nếu có)
+firebase-adminsdk-*.json
