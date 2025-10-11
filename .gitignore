@@ -1,5 +1,3 @@
-# Ignore all JS files
-**/*.js
 
 # Ignore all CPP files
 **/*.cpp
